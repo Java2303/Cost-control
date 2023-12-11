@@ -17,7 +17,7 @@
             height: 100vh;
             overflow: hidden;
         }
-
+ 
         header {
             background-color: #4caf50;
             color: #fff;
@@ -28,23 +28,23 @@
             top: 0;
             z-index: 1000;
         }
-
+ 
         main {
             text-align: center;
             position: relative;
         }
-
+ 
         img {
             max-width: 100%;
             height: auto;
             margin-bottom: 20px;
         }
-
+ 
         p {
             font-size: 18px;
             margin-bottom: 20px;
         }
-
+ 
         a {
             background-color: #4caf50;
             color: #fff;
@@ -53,15 +53,15 @@
             font-size: 16px;
             border-radius: 5px;
         }
-
+ 
         a:hover {
             background-color: #45a049;
         }
-
+ 
         body:hover {
             animation: backgroundMove 10s infinite linear;
         }
-
+ 
         @keyframes backgroundMove {
             0% {
                 background-position: 0 0;
@@ -75,18 +75,18 @@
     --notification-primary: #aaec8a;
     --background: #FAF9FF;
 }
-
+ 
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-
+ 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
 }
-
+ 
 .notification {
     position: absolute;
     width: max-content;
@@ -105,14 +105,14 @@ body {
     visibility: hidden;
     animation: fade-in 3s linear;
 }
-
+ 
 .notification__body {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 16px 8px;
 }
-
+ 
 .notification__progress {
     position: absolute;
     left: 4px;
@@ -129,7 +129,7 @@ body {
     border-radius: inherit;
     animation: progress 2.5s 0.3s linear;
 }
-
+ 
 @keyframes fade-in {
     5% {
         opacity: 1;
@@ -141,12 +141,31 @@ body {
         transform: translateY(0);
     }
 }
-
+ 
 @keyframes progress {
     to {
         transform: scaleX(1);
     }
 }
+        img {
+            max-width: 80%; 
+            height: auto;
+            margin-bottom: 10px; 
+        }
+
+        #btnDescargar {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        #btnDescargar:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -158,11 +177,12 @@ body {
         <p>Descubre la mejor aplicación para <strong>controlar tu dinero</strong>. ¡No te lo pierdas!</p>
         <img src="https://i.pinimg.com/736x/d4/4d/06/d44d060d72bcf5652602c21a0fe83872.jpg" alt="Otra captura de pantalla de la App">
         <p>Descarga la app ahora y disfruta de todas las características y beneficios que ofrecemos.</p>
-        <a href="app.xaml">Descargar App</a>
+        <a href="reseña.html" id="btnReseña">Ver Reseña</a>
+        <a href="app.xaml" id="btnDescargar">Descargar Aplicación</a>
     </main>
     <div class="notification">
         <div class="notification__body">
-            Cuenta Creada con Exito &#128640; 
+            Cuenta Creada con Éxito &#128640;
         </div>
         <div class="notification__progress"></div>
     </div>
