@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+            body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4caf50;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+ 
+        header {
+            background-color: #4caf50;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+ 
+        main {
+            text-align: center;
+        }
+ 
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+ 
+        button {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+ 
+        button:hover {
+            background-color: #333;
+        }
+        #titu{
+            font-size: 80px;
+        }
+        #logo{
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        #img{
+            position: relative;
+            height: 300px;
+            left: 150px;
+            top: -30px;
+        }
+        #btn2{
+            position: relative;
+            left: -180px;
+            top: 10px;
+        }
+        #btn3{
+            position: relative;
+            left: -150px;
+            top: 10px;
+        }
+        #selectIdioma {
+            position: absolute;
+            top: 10px;
+            right: 60px; 
+            background-color: #000000;
+            color: #ffffff;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #selectIdioma i {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titu">Cost-Control</h1>
+    </header>
+    <main>
+        <img id="img" src="https://i.pinimg.com/736x/a5/af/e8/a5afe845f6ddad79b018a34aa2ac17a4.jpg" height="0px">
+        <button id="btn2" onclick="location.href='ppingles.html'">Log In</button>
+        <button id="btn3" onclick="location.href='registrarseeningles.html'">Sign Up</button>
+        <button id="selectIdioma">
+            <i class="fas fa-globe"></i> language
+            <select onchange="cambiarIdioma(this.value)">
+                <option value="es">Spanish</option>
+                <option value="en">English</option>
+                
+            </select>
+        </button>
+    </main>
+
+    <script>
+        function cambiarIdioma(idioma) {
+            if (idioma === 'es') {
+                window.location.href ='index.html'; 
+               
+            }
+        }
+    </script>
+</body>
+</html>
